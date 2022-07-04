@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #EBE7E7;
+}
+
+/*styles all items*/
+* {
+    box-sizing: border-box;
+}
+  
+/*styles the div class header*/
+.header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+
+/*styles the div id gallery*/
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+/*styles the images inside div id gallery*/
+#gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+/*media query for screens smaller than 800px in width*/
+@media (max-width: 800px) {
+    #gallery img {
+        width: 50%; /*This will convert the gallery to a two-column layout.*/
+    }
+}
+
+/*media query for screens smaller than 600px in width*/
+@media (max-width: 600px) {
+    #gallery img {
+        width: 100%; /*This will convert the gallery to a single-column layout.*/
+    }
+}
